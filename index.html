@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>SALES DASHBOARD</h1>
+  </header>
+  <main>
+  <section class="table1">
+    <h3>Sales and states</h3>
+    <div class="sous-table1">
+      <form method="post" action="traitement.php">
+        <p>
+            <label for="pseudo"><font size="2"><strong>Product</strong></font><br></label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Product's name" size="30" maxlength="10" />
+        </p>
+    </form>
+      <form method="post" action="traitement.php">
+        <p>
+            <label for="pays"><font size="2"><strong>Price</strong></font></label><br />
+            <select class="white" name="pays" id="pays">
+                <option value="Abdel3">- to +</option>
+            </select>
+        </p>
+     </form>
+      <p><font size="2"><strong>Quantity > to</strong></font><br><input type="number" /></p> 
+      <button>Sort</button>
+    </div>
+    <div class="sous-table2">
+      <center><table>
+        <p class="records">Sales records</p>
+        <tr class="police">
+            <td><font size="2">Article</font></td>
+            <td><font size="2">Price</font></td>
+            <td><font size="2">Quantity</font></td>
+        </tr>
+        <tr>
+            <td><font size="-1" >Data</td></font>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+        </tr>
+        <tr>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+        </tr>
+        <tr>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+        </tr>
+        <tr>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+        </tr>
+        <tr>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+            <td><font size="-1">Data</td></font>
+        </tr>
+     </table></center>
+    </div>
+    <br>
+    <div class="sous-table3">
+      <table class="taille">
+        <tr>
+          <td class="td1"><font size="-1"><i class="fas fa-boxes"></i> Stock</td></font> 
+          <td class="td2"><font size="-1"><i class="fas fa-dollar-sign"></i> Cash</td></font>
+        </tr>
+        <tr>
+          <td class="td3"><font size="-1"><i class="fas fa-trophy"></i> Conversation</td></font>
+          <td class="td4"><font size="-1"><i class="fas fa-warehouse"></i> Warehouse</td></font>
+        </tr>
+      </table>
+    </div>
+
+  </section>
+
+  <section class="table2">
+
+    <div class="sous-table4">
+      <h3>Tendency indicators <i class="fas fa-stethoscope"></i></h3>
+          <div class="circle-yellow">
+            <div class="circle multi-line"><strong>40</strong><i class="fas fa-dollar-sign"></i><br /><font size="1">Average purchasse</font></div>
+          </div>
+          <div class="circle-red">
+            <div class="circle multi-line"><Strong>30%</Strong><br /><font size="1">Aborted</font> </div>
+          </div>
+          <div class="circle-yellow">
+            <div class="circle multi-line"><strong>25480</strong><i class="fas fa-dollar-sign"></i><br /><font size="1">Monthly sales</font> </div>
+          </div>  
+          <div class="circle-green">
+            <div class="circle multi-line"><strong>80%</strong><br /><font size="1">Satisfaction</font> </div>
+          </div>      
+    </div>
+
+    <div>
+      <h3>Charts <i class="far fa-chart-bar"></i></h3>
+      <section class="sous-table5">
+      <div class="st1">
+      <p><font size="-1">entertainement</font></p>
+      <p><font size="-1">High tech</font></p>
+      <p><font size="-1">Clothes</font></p>
+      </div>
+      <div class="st2">
+        <div class="progress-bar"></div><br>
+        <div class="progress-bar1"></div><br>
+        <div class="progress-bar2"></div>
+      </div>
+      </section>
+    </div>
+
+  </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
